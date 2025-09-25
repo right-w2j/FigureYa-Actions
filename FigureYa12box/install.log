@@ -61,7 +61,7 @@ trying URL 'https://cloud.r-project.org/src/contrib/scales_1.4.0.tar.gz'
 trying URL 'https://cloud.r-project.org/src/contrib/Cairo_1.6-5.tar.gz'
 trying URL 'https://cloud.r-project.org/src/contrib/covr_3.6.4.tar.gz'
 trying URL 'https://cloud.r-project.org/src/contrib/dplyr_1.1.4.tar.gz'
-trying URL 'https://cloud.r-project.org/src/contrib/forcats_1.0.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/forcats_1.0.1.tar.gz'
 trying URL 'https://cloud.r-project.org/src/contrib/gridGraphics_0.5-1.tar.gz'
 trying URL 'https://cloud.r-project.org/src/contrib/magick_2.9.0.tar.gz'
 trying URL 'https://cloud.r-project.org/src/contrib/maps_3.4.3.tar.gz'
@@ -1056,32 +1056,32 @@ configure: creating ./config.status
 config.status: creating src/Makefile
 ** libs
 make -f "/opt/R/4.5.1/lib/R/etc/Makeconf" -f Makefile init.o mapclip.o mapget.o smooth.o thin.o 
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 gcc -std=gnu2x -I"/opt/R/4.5.1/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c init.c -o init.o
 gcc -std=gnu2x -I"/opt/R/4.5.1/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c mapclip.c -o mapclip.o
 gcc -std=gnu2x -I"/opt/R/4.5.1/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c mapget.c -o mapget.o
 gcc -std=gnu2x -I"/opt/R/4.5.1/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c smooth.c -o smooth.o
 gcc -std=gnu2x -I"/opt/R/4.5.1/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c thin.c -o thin.o
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 "/opt/R/4.5.1/lib/R/bin/R" CMD SHLIB -o maps.so init.o mapclip.o mapget.o smooth.o thin.o 
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 gcc -std=gnu2x -shared -L/opt/R/4.5.1/lib/R/lib -L/usr/local/lib -o maps.so init.o mapclip.o mapget.o smooth.o thin.o -L/opt/R/4.5.1/lib/R/lib -lR
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 make -f "/opt/R/4.5.1/lib/R/etc/Makeconf" -f Makefile Gmake
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 gcc -std=gnu2x -g -O2  -I/usr/local/include -L/usr/local/lib  Gmake.c   -o Gmake
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 make -f "/opt/R/4.5.1/lib/R/etc/Makeconf" -f Makefile Lmake
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 gcc -std=gnu2x -g -O2  -I/usr/local/include -L/usr/local/lib  Lmake.c   -o Lmake
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 make -f "/opt/R/4.5.1/lib/R/etc/Makeconf" -f Makefile world2.line
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 Converting world to world2
 gawk -f ./convert.awk < world.line > world2.line
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 make -f "/opt/R/4.5.1/lib/R/etc/Makeconf" -f Makefile county.L state.L usa.L nz.L world.L world2.L italy.L france.L state.vbm.L state.carto.L lakes.L
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 ./Lmake 0 s b county.line county.linestats ../inst/mapdata/county.L
 ./Lmake 0 s b state.line state.linestats ../inst/mapdata/state.L
 ./Lmake 0 s b usa.line usa.linestats ../inst/mapdata/usa.L
@@ -1093,9 +1093,9 @@ make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
 ./Lmake 0 p b state.vbm.line state.vbm.linestats ../inst/mapdata/state.vbm.L
 ./Lmake 0 p b state.carto.line state.carto.linestats ../inst/mapdata/state.carto.L
 ./Lmake 0 s b lakes.line lakes.linestats ../inst/mapdata/lakes.L
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 make -f "/opt/R/4.5.1/lib/R/etc/Makeconf" -f Makefile county.G state.G usa.G nz.G world.G world2.G italy.G france.G state.vbm.G state.carto.G lakes.G
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 ./Gmake b county.gon county.gonstats ../inst/mapdata/county.G ../inst/mapdata/county.L
 ./Gmake b state.gon state.gonstats ../inst/mapdata/state.G ../inst/mapdata/state.L
 ./Gmake b usa.gon usa.gonstats ../inst/mapdata/usa.G ../inst/mapdata/usa.L
@@ -1107,10 +1107,10 @@ make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
 ./Gmake b state.vbm.gon state.vbm.gonstats ../inst/mapdata/state.vbm.G ../inst/mapdata/state.vbm.L
 ./Gmake b state.carto.gon state.carto.gonstats ../inst/mapdata/state.carto.G ../inst/mapdata/state.carto.L
 ./Gmake b lakes.gon lakes.gonstats ../inst/mapdata/lakes.G ../inst/mapdata/lakes.L
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 make -f "/opt/R/4.5.1/lib/R/etc/Makeconf" -f Makefile county.N state.N usa.N nz.N world.N world2.N italy.N france.N state.vbm.N state.carto.N lakes.N
-make[1]: Entering directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
-make[1]: Leaving directory '/tmp/RtmpRbAn7L/R.INSTALL54adefc9ecb/maps/src'
+make[1]: Entering directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
+make[1]: Leaving directory '/tmp/RtmpnNOIJm/R.INSTALL548736cbf7ec/maps/src'
 installing to /home/runner/work/_temp/Library/00LOCK-maps/00new/maps/libs
 ** R
 ** data
@@ -1706,7 +1706,7 @@ installing to /home/runner/work/_temp/Library/00LOCK-dplyr/00new/dplyr/libs
 ** testing if installed package keeps a record of temporary installation path
 * DONE (dplyr)
 * installing *source* package ‘forcats’ ...
-** this is package ‘forcats’ version ‘1.0.0’
+** this is package ‘forcats’ version ‘1.0.1’
 ** package ‘forcats’ successfully unpacked and MD5 sums checked
 ** using staged installation
 ** R
@@ -1928,7 +1928,7 @@ installing to /home/runner/work/_temp/Library/00LOCK-vdiffr/00new/vdiffr/libs
 * DONE (vdiffr)
 
 The downloaded source packages are in
-	‘/tmp/RtmpWG1quW/downloaded_packages’
+	‘/tmp/Rtmp5Supns/downloaded_packages’
 Successfully installed: cowplot 
 Package already installed: ggplot2 
 Package already installed: tidyr 
